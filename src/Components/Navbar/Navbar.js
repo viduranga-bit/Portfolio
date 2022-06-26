@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./navbar.css"
 import { Link } from 'react-router-dom';
 import {FaBars,FaTimes} from 'react-icons/fa';
-
+import logo from "./logod.png";
 export const Navbar = () => {
    
     const [click,setClick] = useState(false);
@@ -11,9 +11,10 @@ export const Navbar = () => {
   return (
     <div className='header'>
        <Link to ="/">
-       <h1>Amith viduranga</h1>
+        <img className='logo' src={logo} alt="Logo"></img>
+       
        </Link>
-       <ul className='nav-menu'>
+       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
         <Link to ="/">Home</Link> 
         </li>

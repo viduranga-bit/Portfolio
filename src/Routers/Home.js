@@ -1,9 +1,11 @@
 import React from 'react';
+import HeroImage from '../Components/HeroImage/HeroImage';
 import { Navbar } from '../Components/Navbar/Navbar';
 
 const Home = () => {
   return <div>
-    <Navbar/>
+     <Navbar/>
+     <HeroImage/>
   </div>;
 
 };
