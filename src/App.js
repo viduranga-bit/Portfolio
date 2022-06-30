@@ -5,6 +5,9 @@ import Project from "./Routers/Project";
 import Contact from "./Routers/Contact";
 import About from "./Routers/About";
 import firebase from "./firebase";
+import "firebase/firestore";
+
+
 
 
 
@@ -17,8 +20,7 @@ function App() {
 
   useEffect(() => {
     const fetchdata = async () => {
-      const db = firebase.firestore();
-      
+      const db = firebase.firestore();    
       const dbcollection = await db.collection("homepage").get();
       setdata(dbcollection.docs.map((doc) => doc.data()));
 

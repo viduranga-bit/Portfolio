@@ -4,102 +4,98 @@ import "./Footer.css";
 import * as ReactBootStrap from "react-bootstrap";
 
 function Footer(props) {
+  
 	
   return (
-    <footer class="footer text-center">
-       <div className="container">
-		
-		        <div className="row">
-        <div className="col-md-4 mb-lg-0 align-self-center contact" >
-							<div className="d-flex justify-content-center" style={{ marginBottom: '-50px', fontSize: '15px' }}>
-								<i className="fa fa-phone" style={{ fontSize: '15px', marginRight: '15px' }}></i>
-								{<p >{props.footerdata[1]?.footer}</p>}
-							</div>
-							<div className="d-flex justify-content-center" style={{ fontSize: '15px' }}>
-								<i className="fa fa-envelope" style={{ fontSize: '15px', marginRight: '15px' }}></i>
-								{ <p >{props.footerdata[0]?.facebook}</p> }
-							</div>
-						</div>
+    
 
-            <div className="col-md-4">
-          </div>
-          <div className="col-md-4 mb-lg-0">
-            
-            <ul className="list-inline">
-								<li  className="list-inline-item">
-									<a
-										role="button"
-										target="_blank"
-										rel="noopener noreferrer"
-							      href={props.footerdata[0]?.facebook}
-									>
-										<i className="fa fa-github"></i>
-                     
-									</a>
-								</li>
-                <li className="list-inline-item">
-									<a
-						
-										role="button"
-										target="_blank"
-										rel="noopener noreferrer"
-										href={props.footerdata[0]?.twitter}
-									>
-										<i className="fa fa-twitter" />
-									</a>
-								</li>
-								<li className="list-inline-item">
-									<a
-									  
-										role="button"
-										target="_blank"
-										rel="noopener noreferrer"
-								    href={props.footerdata[0]?.linkedin}
-									>
-										<i className="fa fa-linkedin"></i>
-									</a>
-								</li>
-								
-								<li className="list-inline-item">
-									<a
-									
-										role="button"
-										target="_blank"
-										rel="noopener noreferrer"
-										href={props.footerdata[0]?.facebook}
-									>
-										<i className="fa fa-facebook" />
-									</a>
-								</li>
-								<li className="list-inline-item">
-									<a
-							
-										role="button"
-										target="_blank"
-										rel="noopener noreferrer"
-									  href={props.footerdata[0]?.Instagram}
-									>
-										<i className="fa fa-instagram" />
-									</a>
-								</li>
-							</ul>      
-              
-            </div>
-          </div>
-        </div>
-        <div className="container">
-        <div className="row justify-content-center">
-           <div className="col-9 linee">
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Find Me</h5>
 
-           </div>
-       </div>
-        <div className="row justify-content-center">
-        <div className="col-auto">
-          <p className="copy">© Copyright {props.footerdata[2]?.year}  Amith Viduranga,All Rights Reserved</p>
-        </div>
-        </div>
-        </div>
-    </footer>
+<p class="mb10"></p>
+<p><i class="fa fa-location-arrow"></i> {props.footerdata[1]?.address} </p>
+<p><i class="fa fa-phone"></i> {props.footerdata[1]?.mobileNo} </p>
+<p><i class="fa fa fa-envelope"></i> {props.footerdata[1]?.email}  </p>
+
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Image Rectoucing</a></li>
+<li><a href="http://webenlance.com">Clipping Path</a></li>
+<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+<li><a href="http://webenlance.com">Image Cropping</a></li>
+</ul>
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Remove Background</a></li>
+<li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
+<li><a href="http://webenlance.com">Logo Design</a></li>
+<li><a href="http://webenlance.com">Vectorization</a></li>
+<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+<li><a href="http://webenlance.com">Image Cropping</a></li>
+</ul>
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Follow Me</h5>
+
+
+<ul class="footer_ul2_amrc">
+<li><a href={props.footerdata[2]?.instagram}><i class="fab fa-instagram fleft padding-right"></i> </a><p>Follow me on Instagram :<a href={props.footerdata[2]?.instagram}>Instagram.com</a></p></li>
+<li><a href={props.footerdata[2]?.instagram}><i class="fab fa-twitter fleft padding-right"></i> </a><p>Follow me on Twitter :<a href={props.footerdata[2]?.instagram}>twitter.com</a></p></li>
+<li><a href={props.footerdata[2]?.instagram}><i class="fab fa-linkedin fleft padding-right"></i> </a><p>Connect with me on LinkedIn :<a href={props.footerdata[2]?.instagram}>LinkedIn.com</a></p></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<ul class="foote_bottom_ul_amrc">
+<li><a href="http://webenlance.com">Home</a></li>
+<li><a href="http://webenlance.com">About</a></li>
+<li><a href="http://webenlance.com">Services</a></li>
+<li><a href="http://webenlance.com">Pricing</a></li>
+<li><a href="http://webenlance.com">Blog</a></li>
+<li><a href="http://webenlance.com">Contact</a></li>
+</ul>
+
+<p class="text-center">Copyright {props.footerdata[0]?.year} | Designed With by <a href="#">Amith Viduranga</a></p>
+
+<ul class="social_footer_ul">
+<li><a href={props.footerdata[2]?.facebook}><i class="fab fa-facebook-f"></i></a></li>
+<li><a href={props.footerdata[2]?.twitter}><i class="fab fa-twitter"></i></a></li>
+<li><a href={props.footerdata[2]?.linkedin}><i class="fab fa-linkedin"></i></a></li>
+<li><a href={props.footerdata[2]?.instagram}><i class="fab fa-instagram"></i></a></li>
+<li><a href={props.footerdata[2]?.github}><i class="fab fa-github"></i></a></li>
+<li><a href={props.footerdata[2]?.stackoverflow}><i class="fab fa-stack-overflow"></i></a></li>
+</ul>
+
+</div>
+
+</footer>
+
+
+
   );
 }
 export default Footer;
