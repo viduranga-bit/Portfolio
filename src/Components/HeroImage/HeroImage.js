@@ -6,6 +6,7 @@ import "./HeroImage.css";
 
 
 
+
 const HeroImage = () => {
 
   const {text} = Typewriter({
@@ -22,22 +23,11 @@ const HeroImage = () => {
     <div className='profile-parent'>
       <div className='profile-details'>
         <div className = 'colz'>
-        <div className='colz-icon'>
-          <a href='#'>
-              <i className='fa fa-facebook-squre'></i>
-          </a>
-          <a href='#'>
-              <i className='fa fa-facebook-squre'></i>
-          </a>
-          <a href='#'>
-              <i className='fa fa-facebook-squre'></i>
-          </a>
-          <a href='#'>
-              <i className='fa fa-facebook-squre'></i>
-          </a>
-        </div>
-        </div>
+      
+
+       </div>
         <div className='profile-details-name'>
+   
           <span className='primary-text'>
                {" "}
                Hi, I'M  <span className='highlighted-text'>Amith viduranga</span>
