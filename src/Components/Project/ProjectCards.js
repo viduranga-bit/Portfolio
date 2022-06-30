@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import firebase from "../../firebase";
 import "firebase/firestore";
+import './ProjectCards.css'
+
+
 
 const ProjectCards = () => {
 
@@ -19,60 +22,42 @@ const ProjectCards = () => {
    
 
   return (
-    <div>
-      <pre>{JSON.stringify(projectdata,undefined,1)}</pre> 
 
-      <tbody>
+    
+    <div className='container' >
+      
+      
+     <div className="card-columns" >
           {projectdata.map((doc ,index) =>{
-              return(
-                 <tr key ={doc.id}>
-                <td>{index+1}</td>
-                <td>{doc.project_name}</td>
-                <td>{doc.project_id}</td>
-                </tr>
-              );
-          })}
-          
-        </tbody>
+      return(
 
-        <div class="card-deck">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title"></h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
+        
+    
+<div className="card " key ={doc.id}>
+  <img src={doc.project_image_link} className="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{doc.project_description}</p>
   </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Card titlessd</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
+  <div class="card-footer">
+    <small class="text-muted">{doc.project_name}</small>
+      </div>
 </div>
 
 
 
+              );
+          })}
+          
+    
+  
+          </div>
 
-    </div>
+
+          </div>
+
+  
   )
 }
 
-export default ProjectCards
+export default ProjectCards;
