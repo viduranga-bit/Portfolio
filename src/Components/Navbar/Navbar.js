@@ -9,6 +9,8 @@ export const Navbar = () => {
     const handleClick = () => setClick(!click);
 
   return (
+
+   
     <div className='header'>
        <Link to ="/">
         <img className='logo' src={logo} alt="Logo"></img>
@@ -19,13 +21,13 @@ export const Navbar = () => {
         <Link to ="/">Home</Link> 
         </li>
         <li>
-        <Link to ="/project">Projects</Link> 
+        <Link to ="./project">Projects</Link> 
         </li>
         <li>
-        <Link to ="/about">About</Link> 
+        <Link to ="./about">About</Link> 
         </li>
         <li>
-        <Link to ="/contact">Contact</Link> 
+        <Link to ="./contact">Contact</Link> 
         </li>
        </ul>
 
@@ -39,5 +41,6 @@ export const Navbar = () => {
       
        </div>
     </div>   
+   
   );
 };

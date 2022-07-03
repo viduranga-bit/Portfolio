@@ -1,3 +1,4 @@
+import ReactDOM from "react-dom/client";
 import React,{ useState,useEffect } from "react";
 import "./index.css";
 import Home from "./Routers/Home";
@@ -6,17 +7,16 @@ import Contact from "./Routers/Contact";
 import About from "./Routers/About";
 import firebase from "./firebase";
 import "firebase/firestore";
+import {BrowserRouter ,Router, Routes, Route,Link} from "react-router-dom";
+import { Navbar } from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 
 
-
-
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
-function App() {
+export default function App() {
   const [data, setdata] = useState([]);
-  const [footerdata,setfooterdata] = useState([])
-  
+  const [footerdata,setfooterdata] = useState([]);
+  const [maindata,setmaindata] = useState([]) 
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -26,6 +26,9 @@ function App() {
 
       const footer = await db.collection("footer").get();
       setfooterdata(footer.docs.map((doc) => doc.data()));
+
+      const mainData = await db.collection("mainData").get();
+      setmaindata(mainData.docs.map((doc) => doc.data()));
    
        };
     fetchdata();
@@ -34,17 +37,20 @@ function App() {
 
   return (
     
-    
+     <BrowserRouter>
+     <Navbar/>
        <Routes>
-       <Route  path="/" element={<Home footerdata={footerdata} />} />
-       <Route  path="/project" element = {<Project />}/>
-       <Route  path="/about" element = {<About/>}/>
-       <Route  path="/contact" element = {<Contact/>}/>
+       <Route  path="/" element={<Home maindata={maindata} />} />
+       <Route  path="#project" element = {<Project />}/>
+       <Route  path="#about" element = {<About/>}/>
+       <Route  path="#contact" element = {<Contact/>}/>
       
      </Routes>
-   
+   <Footer footerdata={footerdata} />
+     </BrowserRouter>
     
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

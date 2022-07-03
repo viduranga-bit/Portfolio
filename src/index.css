@@ -6,15 +6,13 @@
    padding: 0;
    font-family: 'Roboto', sans-serif;
 }
-body{
 
-  background-color: rgb(5, 5, 5);
-}
+
 h1,
 h4,
 p,
 a{
-  color: aliceblue;
+  color: rgb(2, 2, 2);
   text-decoration: none;
 }
 ul{
@@ -34,4 +32,17 @@ ul{
   background: rgb(255, 255, 255, 0.2);
   color: aliceblue;
   transition: 0.3s;
+}
+:root{
+
+  --color-bg :#1f1f38;
+  --color-bg-varient: #2c2c6c;
+  --color-primary-variant:rgb(77,181,255,0.4);
+  --color-white:#fff;
+  --color-light:rgb(255,255,255,0.6);
+  --container-width-lg:75%;
+  --container-width-md:86%;
+  --container-width-ms:90%;
+
+
 }

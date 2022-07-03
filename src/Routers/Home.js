@@ -1,15 +1,21 @@
 import React from 'react';
 import HeroImage from '../Components/HeroImage/HeroImage';
-import { Navbar } from '../Components/Navbar/Navbar';
-import Footer from '../Components/Footer/Footer';
+import Project from './Project';
+import ProjectCards from '../Components/Project/ProjectCards';
+import Skill from '../Components/Skillls/Skill';
+import AboutMe from '../Components/AboutMe/AboutMe';
 
-const Home = ({footerdata}) => {
+const Home = ({maindata}) => {
   return <div>
 
   
-     <Navbar/>
+
      <HeroImage/>
-     <Footer footerdata={footerdata}/>
+     
+     <Skill maindata={maindata} />
+     <AboutMe maindata={maindata}/>
+     <ProjectCards/>
+    
 
   
   </div>;
