@@ -1,17 +1,12 @@
 
 
- .profile-container{
-    height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
+ .profile-container{  
+  margin-top: 0;
+  padding: 100px 10px 200px 0;
+  background-position: top center;
   background-size: cover;
-  position: relative;
-  width: 100%;
-    height: 100%;
-      background-position: center;
-     align-items: center; 
-    min-height: max-content;
-    background-image: url("../../assests/HeroImg.jpg");
+  background-repeat: no-repeat;
+  background-image: url("https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/banner-bg.png");
  }
  
  .profile-parent{
@@ -20,6 +15,7 @@
     justify-content: center;
     color: rgb(252, 252, 252);
     width: 100%;
+  
    
     
  }
@@ -30,7 +26,7 @@
 }
  .profile-details-name{
      font-size: 24px;
-     margin-top: 200px;
+    
      text-transform: uppercase;
     
  }
@@ -45,6 +41,7 @@
     font-weight: 700;
    
  }
+
  .primary-text{
     color: white;
  }
@@ -64,7 +61,8 @@
  }
 
  .profile-picture-background{
-    height: 592px;
+  
+    height: 590px;
     width: 400px;
     background-image: url("../../assests/my.png");
     background-size: cover;
@@ -80,7 +78,7 @@
 }
  .profile-options{
 
-    margin-top: 110px;
+   
     margin-bottom: 110px;
   
 
@@ -363,6 +361,17 @@
   .profile-options .button-85 {
     margin-left: 15px;
   }
+  
+}
+
+@media screen and (max-width:500px) {
+  
+  .profile-container{  
+   
+    padding: 0px 0px 0px 0;
+
+    
+   }
   
 }
 
