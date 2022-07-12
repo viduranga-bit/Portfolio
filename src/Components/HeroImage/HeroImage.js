@@ -60,7 +60,7 @@ const HeroImage = () => {
        
         <button class="button-85" role="button">Projects</button>
  
-        <button class="button-78" role="button">Contact Me</button>
+        <button class="button-78" role="button">Contact me</button>
         </div>
       </div>
     

@@ -23,15 +23,16 @@ const AboutMe = (props) => {
                        </div>
                         </div> 
                    </div>
-    <div class="card mb-3" >
+    <div class="card mb-3 backabout"
+     >
   <div class="row no-gutters">
     
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 className="card-title">Amith Viduranga Rathnayaka</h5>
+    <div class="col-md-8 ">
+      
+        <h3 className="card-title">Amith Viduranga Rathnayaka</h3>
         <p class="card-text">When </p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+      
     </div>
 
     <div class="col-md-4">

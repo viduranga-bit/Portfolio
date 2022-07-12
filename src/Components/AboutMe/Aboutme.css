@@ -22,3 +22,13 @@
    position: relative;
 
  }
+
+ .backabout{
+
+    border-width: 3px;
+  border-color: rgba(99, 38, 123, 100);
+  border-radius: 20px;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/ByLBKzd/5172658.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+ }

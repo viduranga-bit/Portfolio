@@ -70,8 +70,23 @@
     background-position: center;
     transform: translateX(-50%,-50%);
     transition: bottom 2s,left 10s;
+    animation: updown 2s linear infinite;
+}
 
- }
+ 
+  
+@keyframes updown {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+    
+}
  .profile-picture-background:hover {
     
    
