@@ -1,15 +1,18 @@
 import ReactDOM from "react-dom/client";
 import React,{ useState,useEffect } from "react";
 import "./index.css";
-import Home from "./Routers/Home";
-import Project from "./Routers/Project";
-import Contact from "./Routers/Contact";
-import About from "./Routers/About";
+
 import firebase from "./firebase";
 import "firebase/firestore";
 import {BrowserRouter ,Router, Routes, Route,Link} from "react-router-dom";
-import { Navbar } from "./Components/Navbar/Navbar";
+import  Navbar  from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import HeroImage from './Components/HeroImage/HeroImage';
+
+import ProjectCards from './Components/Project/ProjectCards';
+import Skill from './Components/Skillls/Skill';
+import AboutMe from './Components/AboutMe/AboutMe';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -32,25 +35,24 @@ export default function App() {
    
        };
     fetchdata();
-  }, []);
+    }, []);
 
 
   return (
     
-     <BrowserRouter>
+     <div>
+
      <Navbar/>
-       <Routes>
-       <Route  path="/" element={<Home maindata={maindata} />} />
-       <Route  path="#project" element = {<Project />}/>
-       <Route  path="#about" element = {<About/>}/>
-       <Route  path="#contact" element = {<Contact/>}/>
-      
-     </Routes>
-   <Footer footerdata={footerdata} />
-     </BrowserRouter>
-    
+     <HeroImage/>
+     <Skill maindata={maindata} />
+     <AboutMe maindata={maindata}/>
+     <ProjectCards/>
+     <Contact/>
+     <Footer footerdata={footerdata}/>
+     
+    </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<App/>);

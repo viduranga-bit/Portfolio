@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+ 
+
+.back{
+
+    background-image: url("https://i.ibb.co/3MX7wRw/color-sharp.png");
+    margin-top: 0;
+    padding: 0px 0px 100px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    top: -130px;
+    position: relative;
+}
+.title h1{
+    margin-bottom: 30px;
+    font-weight: 900;
+     font-size: 40px;
+     
+     color: aliceblue;
+   
+}
+
+#new{
+  border-width: 3px;
+  border-color: rgba(99, 38, 123, 100);
+  border-radius: 20px;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/fnP3pn5/abstract-wavy-background-in-purple-color-free-vector.jpg");
+}
+.card-img{
+  
+  border-radius: 22px;
+  left: 200px;
+  height: 100%;
+  
+}
+ #image{
+  border:solid 2px rgba(255, 67, 239, 0.497);
+  margin: 10px;
+  border-radius: 22px;
+  margin-left: 0;
+  left:-50px;
+ 
+}
+
+.text{
+  margin: 16px;
+}
+
+.card-text{
+ width: 100%;
+  margin: 13px;
+  font-size: 18px; 
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card-title {
+  
+  color: aliceblue;
+  font-family: 'Barlow', sans-serif;
+  
+}
+.text h5{
+   font-size: 30px;
+}
+.text h6{
+  font-size: 18px;
+}
+.text{
+  
+
+}
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 20px;
+  border: 2px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width:1110px) {
+  .card-img{
+    height: 100%;
+    left: -10px;
+    
+  }
+  #image{
+   
+    left:-30px;
+ 
+  }
+  .card-text{
+    font-size: 18px;
+    margin: 0;
+  }
+  .button-87{
+    padding: 10px;
+    font-size: 8px;
+    border-radius: 10px;
+ 
+   }
+
+}
+@media screen and (max-width:910px) {
+  .card-text{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+ 
+   
+  }
+
+  .text h5{
+    font-size: 25px
+  }
+  .text h4{
+    font-size: 15px
+  }
+  .text{
+    margin: 5px;
+    left: -20px;
+    
+  }
+
+  .button-87{
+   
+    font-size: 10px;
+    border-radius: 10px;
+    margin-left: 0;
+   }
+  
+}
+@media screen and (max-width:765px) {
+  .card-img{
+    height: 100%;
+    left: -10px;
+    
+  }
+  #image{
+   
+    left: 0;
+    top: -30px;
+ 
+  }
+
+  .text{
+    margin: 5px;
+    left: 0px;
+  }
+  .card-text{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .button-87{
+    padding: 12px;
+    font-size: 10px;
+    border-radius: 10px;
+    margin-left: 0;
+   }
+
+}
+@media screen and (max-width:440px) {
+
+  #new{ 
+
+    width: 93%;
+  }
+  .button-87{
+   padding: 15px;
+   font-size: 12px;
+   border-radius: 15px;
+
+  }
+  .card-img{
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 22px;
+    
+  }
+  .text button{
+
+    margin-right: 10px;
+   
+   
+  }
+  .card-text{
+    width: 100%;
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+  }
+  .text{
+    margin: 0px;
+  }
+
+  .card-img{
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+ 
+    
+  }
+}

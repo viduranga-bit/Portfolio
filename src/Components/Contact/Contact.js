@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <section className="contact" id="connect">
      
-        <Row className="align-items-center">
+        <Row className="align-items-center all">
           <Col  size={12} md={6}>
              <div className='animate__animated'>
                 <img  src="https://raw.githubusercontent.com/judygab/web-dev-projects/e17c7bbf4d4d4de447ca1211b06aec66912e695d/personal-portfolio/src/assets/img/contact-img.svg" width={500} alt="Contact Us"/>
@@ -75,7 +75,7 @@ const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="12" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <button  className='button' type="submit"><span>{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&

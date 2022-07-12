@@ -1,46 +1,50 @@
 import React, { useState } from 'react'
-import "./navbar.css"
-import { Link } from 'react-router-dom';
-import {FaBars,FaTimes} from 'react-icons/fa';
 import logo from "./logod.png";
-export const Navbar = () => {
-   
-    const [click,setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    
-  return (
+import { FaBars, FaTimes } from 'react-icons/fa'
+import './navbar.css'
 
-   
-    <div className='header'>
-       <Link to ="/">
-        <img className='logo' src={logo} alt="Logo"></img>
-       
-       </Link>
-       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-        <Link to ="/">Home</Link> 
-        </li>
-        <li>
-        <Link to ="./project">Projects</Link> 
-        </li>
-        <li>
-        <Link to ="./about">About</Link> 
-        </li>
-        <li>
-        <Link to ="./contact">Contact</Link> 
-        </li>
-       </ul>
 
-       <div className='hamburger' onClick=
-       {handleClick}>
-        {click ? (
-         <FaTimes size={20} style = {{color : "#fff"}}/>
-         ):
-        (<FaBars size={20} style = {{color : "#fff"}} />
-        )}
-      
-       </div>
-    </div>   
-   
-  );
-};
+
+const Navbar = () => {
+
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
+    return (
+        <div className='header'>
+            <nav className='navbar'>
+                <a href='/' className='logo'><h6>ExploreTheWorld</h6>
+                    <img src={logo} alt='logo' className='LOGO' />
+                </a>
+
+                
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-item'>
+                        <a href='#' onClick={closeMenu}>Home</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#intro' onClick={closeMenu}>Skills</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#about' onClick={closeMenu}>About</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#projectcard' onClick={closeMenu}>Projects</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#connect' onClick={closeMenu}>Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
+}
+
+export default Navbar;

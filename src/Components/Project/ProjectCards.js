@@ -23,6 +23,7 @@ const ProjectCards = () => {
 
   return (
 
+    <div className='back' id="projectcard">
     
     <div className='container' >
     <div className='row'>
@@ -33,7 +34,7 @@ const ProjectCards = () => {
 						data-aos-easing="ease-in-sine" 
                         data-aos-delay="40"
 					>
-                        <h1> My Special Skills</h1>
+                        <h1> Projects</h1>
                        
                        <div className="container">
                        <div className="row justify-content-center">
@@ -50,22 +51,24 @@ const ProjectCards = () => {
 
         
 
-<div class="card mb-4" key ={doc.id} >
+<div class="card mb-4" id='new' key ={doc.id} >
   <div class="row no-gutters">
-    <div class="col-md-5">
+    <div className="col-md-5 " id='image' >
       <img src={doc.project_image_link} class="card-img" alt="..."/>
     </div>
-    <div class="col-md-6">
-      <div class="card-body">
-        <h5 class="card-title">{doc.project_description}</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="col-md-6 text">
+    
+        
+        <h5 class="card-title">{doc.project_name}</h5>
+        <h6 class="card-title techniques">{doc.techniques}</h6>
+        <p class="card-text">{doc.project_description}</p>
+        <button type="button" class="btn btn-primary btn-sm button-87">Live Preview</button>
+        <button type="button"  class="btn btn-secondary btn-sm button-87">Github Repo</button>
+        
       </div>
     </div>
   </div>
-</div>
+
 
               );
           })}
@@ -77,7 +80,7 @@ const ProjectCards = () => {
           </div>
         
 
-  
+          </div>
   )
 }
 

@@ -30,7 +30,7 @@ const Skill = (props) => {
 						data-aos-easing="ease-in-sine" 
                         data-aos-delay="10"
 					>
-                        <p1>gbdfhh</p1>
+                        <p1></p1>
                       </div>  
                    </div>
                    

@@ -38,7 +38,7 @@ const HeroImage = () => {
           <span className='primary-text'>
           <h1>
           <Typewriter
-               words={['Enthusiastic DEV ♥️ ','Full Stack Developer', 'Flutter Developer📱', 'Freelancer in Fiver']}
+               words={['Enthusiastic DEV ♥️ ','Full Stack Developer', 'Flutter Developer📱', 'Freelancer in Fiverr']}
                loop
                cursor
                cursorStyle='_'
@@ -48,8 +48,8 @@ const HeroImage = () => {
                               />
              </h1>
              <span className='profile-role-tagline'>
-            <h4> " I love designing & design websites and <br/> I am looking for more opportunities to work in coding on a freelance basis"
-             </h4>
+            <h5> " I love designing & design websites and <br/> I am looking for more opportunities to work in coding on a freelance basis"
+             </h5>
              </span>
             </span>
 
@@ -63,10 +63,10 @@ const HeroImage = () => {
         <button class="button-78" role="button">Contact Me</button>
         </div>
       </div>
-      <div className='profile-picture'>
+    
         <div className='profile-picture-background'>
 
-        </div>
+        
         
         </div> 
     

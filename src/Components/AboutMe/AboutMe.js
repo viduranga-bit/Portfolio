@@ -2,7 +2,7 @@ import React from 'react';
 import "./Aboutme.css";
 
 const AboutMe = (props) => {
-  return <div>
+  return <div className='background' id='about'>
     
   <div className='container'>
 

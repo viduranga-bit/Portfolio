@@ -70,20 +70,13 @@ function Footer(props) {
 
 
 <div class="container">
-<ul class="foote_bottom_ul_amrc">
-<li><a href="http://webenlance.com">Home</a></li>
-<li><a href="http://webenlance.com">About</a></li>
-<li><a href="http://webenlance.com">Services</a></li>
-<li><a href="http://webenlance.com">Pricing</a></li>
-<li><a href="http://webenlance.com">Blog</a></li>
-<li><a href="http://webenlance.com">Contact</a></li>
-</ul>
+
 
 <p class="text-center">Copyright {props.footerdata[0]?.year} | Designed With by <a href="#">Amith Viduranga</a></p>
 
 <ul class="social_footer_ul">
 <li><a href={props.footerdata[2]?.facebook}><i class="fab fa-facebook-f"></i></a></li>
-<li><a href={props.footerdata[2]?.twitter}><i class="fab fa-twitter"></i></a></li>
+
 <li><a href={props.footerdata[2]?.linkedin}><i class="fab fa-linkedin"></i></a></li>
 <li><a href={props.footerdata[2]?.instagram}><i class="fab fa-instagram"></i></a></li>
 <li><a href={props.footerdata[2]?.github}><i class="fab fa-github"></i></a></li>

@@ -11,3 +11,14 @@
     font-weight: 500;
     font-family: 'Josefin Sans', sans-serif;
  }
+ .background{
+   background-color: black;
+   background-image: url("https://i.ibb.co/9pXVTVs/color-sharp2.png" );
+   padding: 0px 0px 50px 0;
+   background-position: top center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   top: -130px;
+   position: relative;
+
+ }
