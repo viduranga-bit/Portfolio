@@ -1,13 +1,18 @@
 import React from 'react'
 import {Typewriter} from 'react-simple-typewriter';
 import 'react-simple-typewriter/dist/index'
-
+import { useState } from 'react';
 import "./HeroImage.css";
 
 
 
 
 const HeroImage = () => {
+
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+  const closeMenu = () => setClick(false);
+  
 
   const {text} = Typewriter({
     loop: 0, 
@@ -38,7 +43,7 @@ const HeroImage = () => {
           <span className='primary-text'>
           <h1>
           <Typewriter
-               words={['Enthusiastic DEV ♥️ ','Full Stack Developer👨', 'Flutter Developer📱', 'Freelancer in Fiverr']}
+               words={['Enthusiastic DEV ♥️ ','Full Stack Developer', 'Flutter Developer📱', 'Freelancer in Fiverr']}
                loop
                cursor
                cursorStyle='_'
@@ -58,9 +63,9 @@ const HeroImage = () => {
 
         <div className='profile-options'>
        
-        <button class="button-87" role="button">Projects</button>
+        <a href='#projectcard' onClick={closeMenu}>  <button  class="button-87" role="button">Projects</button></a>
  
-        <button class="button-87" role="button">Contact me</button>
+        <a href='#connect' onClick={closeMenu}><button class="button-87" role="button">Contact me</button></a>
         </div>
       </div>
     
