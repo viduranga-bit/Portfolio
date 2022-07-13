@@ -27,16 +27,77 @@ const AboutMe = (props) => {
      >
   <div class="row no-gutters">
     
-    <div class="col-md-8 ">
+    <div class="col-md-8 textarea">
       
-        <h3 className="card-title">Amith Viduranga Rathnayaka</h3>
-        <p class="card-text">When </p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h1 className="card-title">Amith Viduranga Rathnayaka</h1>
+        <h2 className="card-title-intro"> Full Stack Developer | Flutter Developer</h2>
+        <div className="socoal-buttons">
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-dribbble"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-github" />
+                            </a>
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-dribbble"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-linkedin" />
+                            </a>
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-twitter"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-twitter" />
+                            </a>
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-twitter"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-instagram" />
+                            </a>
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-twitter"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-stack-overflow" />
+                            </a>
+                            <a
+                              href=""
+                              className="btn btn-just-icon btn-link btn-pinterest"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <i className="fab fa-facebook" />
+                            </a>
+                          </div>
+        <div>
+
+        <h2 className="card-title-intro1"> {props.maindata[0]?.degree} </h2>
+        <h3 className="card-title-intro1"> {props.maindata[0]?.university} </h3>
+        <p class="card-text">{props.maindata[0]?.Description} </p>
+
+       
+        </div>
+       
+         <div className='buttoncenter'>
+         <button type="button"  className='button-87'>Download Resume</button>
+         </div>
       
     </div>
 
     <div class="col-md-4">
-      <img src={props.maindata[0]?.image} class="card-img" alt="..."/>
+      <img src={props.maindata[0]?.image} class="card-img  imagenew" alt="..."/>
     </div>
   </div>
 </div> 

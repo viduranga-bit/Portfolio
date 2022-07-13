@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 .title h1{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
  }
 
  .card-title{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: 500;
     font-family: 'Josefin Sans', sans-serif;
  }
+
+ .card-title-intro{
+   font-size: 16px;
+   text-align: center;
+   color: rgb(255, 176, 229);
+
+}
+.card-title-intro1{
+   font-size: 15px;
+   text-align: center;
+   color: rgb(203, 220, 234);
+
+}
  .background{
    background-color: black;
    background-image: url("https://i.ibb.co/9pXVTVs/color-sharp2.png" );
@@ -22,13 +35,77 @@
    position: relative;
 
  }
-
+  .socoal-buttons{
+   text-align: center;
+ }
  .backabout{
 
-    border-width: 3px;
+  border-width: 3px;
   border-color: rgba(99, 38, 123, 100);
   border-radius: 20px;
-  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/ByLBKzd/5172658.jpg");
-  background-position: cover;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/fnP3pn5/abstract-wavy-background-in-purple-color-free-vector.jpg");
+  margin-top: 0;
+  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
  }
+
+ .textarea{
+  padding: 35px;
+
+ }
+ 
+.socoal-buttons i{
+
+   color: rgb(243, 243, 243);
+}
+ .card-text{
+
+    width: 95%;
+    text-align: justify;
+    padding-left: 20px;
+   margin-top: 20px;
+ }
+
+ .imagenew{
+   border-radius: 0;
+   border-top-right-radius: 18px;
+   border-bottom-right-radius: 18px;
+ }
+
+.buttoncenter {
+  text-align: center;
+}
+
+
+ @media screen and (max-width:1110px) {
+
+ 
+ }
+ @media screen and (max-width:910px) {
+  
+   .textarea h1{
+      font-size: 23px;
+     }
+     .textarea h2{
+      font-size: 13px;
+     }
+ }
+ @media screen and (max-width:765px) {
+   
+ 
+ }
+ @media screen and (max-width:440px) {
+ 
+   
+ 
+   .imagenew{
+
+    border-radius: 0;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+   
+     
+   }
+ }
+ 

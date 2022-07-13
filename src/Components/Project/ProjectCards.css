@@ -28,6 +28,7 @@
    
 }
 
+
 #new{
   border-width: 3px;
   border-color: rgba(99, 38, 123, 100);
@@ -39,6 +40,7 @@
   border-radius: 22px;
   left: 200px;
   height: 100%;
+  width: 100%;
   
 }
  #image{
@@ -47,7 +49,7 @@
   border-radius: 22px;
   margin-left: 0;
   left:-50px;
- 
+  width: 100%;
 }
 
 .text{
@@ -55,11 +57,11 @@
 }
 
 .card-text{
- width: 100%;
-  margin: 13px;
+  width: 100%;
+  margin-bottom: 0px;
   font-size: 18px; 
-  font-weight: 600;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
 }
 
 .card-title {
@@ -73,16 +75,29 @@
 }
 .text h6{
   font-size: 18px;
+  color: hsl(36, 100%, 57%) ;
 }
 .text{
-  
 
+   margin-left: 0;
+   margin-right: 0;
+
+}
+.no-gutters{
+
+
+}
+
+.row{
+
+  width: 100%;
 }
 
 /* CSS */
 .button-87 {
-  margin: 10px;
-  padding: 15px 30px;
+  margin: 15px;
+  margin-left: 0;
+  padding: 10px 20px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -219,7 +234,7 @@
   }
   .card-text{
     width: 100%;
-    margin: 0px;
+    margin-bottom: 10px;
     font-size: 15px;
     font-family: 'Barlow', sans-serif;
   }

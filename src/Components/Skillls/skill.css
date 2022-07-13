@@ -6,6 +6,11 @@
     display: flex;
    
    }
+
+  .row{
+
+    margin: 0;
+  }
    #intro{
    position: relative;
    top: -120px;
