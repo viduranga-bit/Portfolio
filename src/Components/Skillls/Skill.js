@@ -1,107 +1,88 @@
-import React from 'react'
-
+import meter1 from "../../assests/meter1.svg";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import "./skill.css";
+import React, { useEffect, useState } from 'react'
+import firebase from "../../firebase";
+import "firebase/firestore";
 
 
-const Skill = (props) => {
-  return <div>
-      <section id="intro">
-                 <div class="container ">
-                     
-                   <div className="title">
-                   <div data-aos="fade-down"
-					     data-aos-offset="170"
-						data-aos-easing="ease-in-sine" 
-                        data-aos-delay="40"
-					>
-                        <h1> My Special Skills</h1>
-                       
-                       <div className="container">
-                       <div className="row justify-content-center">
-           <div className="col-2 line">
+const Skill = () => {
 
-           </div>
-       </div>
-                       </div>
+    const [skilldata,setskilldata] = useState([])
+  
+  useEffect(() => {
+    const fetchdata = async () => {
+      const db = firebase.firestore();
+
+      const skills = await db.collection("skills").get();
+      setskilldata(skills.docs.map((doc) => doc.data()));
+   
+       };
+    fetchdata();
+  }, []);
+
+
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+     
+      return (
+        <section className="skill" id="skills">
+            <div className="container ">
+                <div className="row">
+                    <div className="col-12 ">
+                        <div className="skill-bx wow zoomIn ">
+                            <h2>Skills</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            
+                         
+
+                          
+                            <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={1500} infinite={true} removeArrowOnDeviceType={["tablet", "mobile"]} ssr={true} className="owl-carousel owl-theme skill-slider">
+                            {skilldata.map((doc ,index) =>{
+                              return(
+                                <div className="item"  key={doc.id}>
+                                    <img src={meter1} alt="Image" />
+                                    <h5>{doc.image}</h5>
+                                    <h6>I started learning Computer Science as a part of my degree program and then I start learning Web and Mobile Developing</h6>
+                                    <h5>Web Development</h5>
+                                    <h6>I started learning Computer Science as a part of my degree program and then I start learning Web and Mobile Developing</h6>
+                                </div>
+                               
+                               );
+                            })}
+                            </Carousel>
+              
+
                         </div>
-
-                        <div data-aos="fade-down"
-						data-aos-offset="170"
-						data-aos-easing="ease-in-sine" 
-                        data-aos-delay="10"
-					>
-                        <p1></p1>
-                      </div>  
-                   </div>
-                   
-                 <div className="row">
-                 
-                   <div className="col-md-4">
-                   <div data-aos="fade-down"
-						data-aos-offset="170"
-						data-aos-easing="ease-in-sine" 
-                        data-aos-delay="140"
-					>
-                     <div className="card  text-center">
-                     <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/full_front_back.jpg" className="card-img-top"></img>
-                    <div className="card-body">
-
-                        <h5 className="card-title">Web Development</h5>
-                        <p className="card-text"> {props.maindata[0]?.WbDevelopmetDes}</p>
-                        <h5 className="card-title">Techniques</h5>
-                        <p className="card-text">{props.maindata[0]?.technologies}</p>
                     </div>
-                     </div>
-                     </div>
+                </div>
+            </div>
+            
+        </section>
+     
+      )
 
-                     </div>
-                     
-                
-                     <div className="col-md-4">
-                     <div data-aos="fade-down"
-						data-aos-offset="170"
-						data-aos-easing="ease-in-sine" 
-					    data-aos-delay="50"
-					>
-                     <div className="card  text-center">
-                     <img src="https://www.teahub.io/photos/full/87-879470_computer-programming-coding-technology.jpg" className="card-img-top"></img>
-                    <div className="card-body">
-
-                        <h5 className="card-title">Computer Programming</h5>
-                        <p className="card-text"> {props.maindata[0]?.WbDevelopmetDes}</p>
-                        <h5 className="card-title">Techniques</h5>
-                        <p className="card-text">{props.maindata[0]?.technologies} </p>
-                    </div>
-                     </div>
-                     </div>
-                     </div>
-                     <div className="col-md-4">
-                     <div data-aos="fade-down"
-						data-aos-offset="170"
-						data-aos-easing="ease-in-sine" 
-                        data-aos-delay="70"
-					>
-                     <div className="card  text-center">
-                     <img src="https://online.stanford.edu/sites/default/files/styles/figure_default/public/2020-06/Statistics-Graduate-Certificate_2.jpg?itok=Z0eVYZxe" className="card-img-top"></img>
-                    <div className="card-body">
-
-                        <h5 className="card-title">Statistical Analysis</h5>
-                        <p className="card-text"> {props.maindata[0]?.WbDevelopmetDes}</p>
-                        <h5 className="card-title">Techniques</h5>
-                        <p className="card-text"> {props.maindata[0]?.technologies}</p>
-                    </div>
-                     </div>
-                     </div>
-                     </div>
-                 </div>
-                 </div>
-               
-                 
-             </section>
+     
+    }
   
 
-  </div>;
-  
-}
 
-export default Skill
+export default Skill;

@@ -81,7 +81,7 @@ const AboutMe = (props) => {
                               <i className="fab fa-facebook" />
                             </a>
                           </div>
-        <div>
+        <div className='cardname'>
 
         <h2 className="card-title-intro1"> {props.maindata[0]?.degree} </h2>
         <h3 className="card-title-intro1"> {props.maindata[0]?.university} </h3>
@@ -96,7 +96,7 @@ const AboutMe = (props) => {
       
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 image">
       <img src={props.maindata[0]?.image} class="card-img  imagenew" alt="..."/>
     </div>
   </div>

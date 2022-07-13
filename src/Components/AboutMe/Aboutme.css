@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 .title h1{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
  }
 
@@ -31,7 +31,7 @@
    background-position: top center;
    background-size: cover;
    background-repeat: no-repeat;
-   top: -130px;
+   
    position: relative;
 
  }
@@ -51,20 +51,21 @@
  }
 
  .textarea{
-  padding: 35px;
+  padding: 40px;
 
  }
  
 .socoal-buttons i{
 
-   color: rgb(243, 243, 243);
+   color: #fff6f6
 }
  .card-text{
 
-    width: 95%;
+    width: 92%;
     text-align: justify;
-    padding-left: 20px;
-   margin-top: 20px;
+    padding-left: 50px;
+    margin-top: 20px;
+
  }
 
  .imagenew{
@@ -90,10 +91,20 @@
      .textarea h2{
       font-size: 13px;
      }
+     .card-text{
+
+  
+   
+      padding-left: 20px;
+    
+  
+   }
+
+   
  }
  @media screen and (max-width:765px) {
-   
- 
+  
+  
  }
  @media screen and (max-width:440px) {
  
@@ -107,5 +118,18 @@
    
      
    }
+
+   .card-text{
+
+  
+    text-align: justify;
+    padding-left: 20px;
+   margin-top: 20px;
+
+ }
+
+ .cardname h3{
+  font-size: 14px;
+ }
  }
  

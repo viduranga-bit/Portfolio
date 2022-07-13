@@ -58,9 +58,9 @@ const HeroImage = () => {
 
         <div className='profile-options'>
        
-        <button class="button-85" role="button">Projects</button>
+        <button class="button-87" role="button">Projects</button>
  
-        <button class="button-78" role="button">Contact me</button>
+        <button class="button-87" role="button">Contact me</button>
         </div>
       </div>
     

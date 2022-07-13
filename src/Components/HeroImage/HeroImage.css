@@ -99,195 +99,15 @@
 
  }
 
+ .profile-options button{
+  font-size: 17px;
+  padding: 18px 45px;
+  margin: 10px;
+  border-radius: 12px;
+ }
 
 
 
-/* CSS */
-.profile-options .button-85 {
-  padding: 1.1em 2.5em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: rgb(221, 189, 189);
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-}
-.profile-role-tagline{
-
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
-}
-.profile-options .button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-   
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #d014a4
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.profile-options .button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: 200%;
-  box-shadow: 0px 0px 14px -7px #d77ae6;
-  background-image: linear-gradient(45deg, #6f7adc 0%, #801099  51%, #2f5fff  100%);
-  left: 0;
-  top: 0;
-  border-radius: 15px;
-}
-
-
-
-.button-78 {
-  align-items: center;
-  appearance: none;
-  background-clip: padding-box;
-  background-color: initial;
-  background-image: none;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: Eina01,sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  justify-content: center;
-  line-height: 25px;
-  margin-left: 20px;
-  min-height: 66px;
-  outline: none;
-  overflow: visible;
-  padding: 20px 30px;
-  pointer-events: auto;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: auto;
-  word-break: keep-all;
-  z-index: 0;
-}
-
-@media (min-width: 768px) {
-  .button-78 {
-    padding: 15px 30px;
-  }
-}
-
-.button-78:before,
-.button-78:after {
-  border-radius: 15px;
-}
-
-.button-78:before {
-  background-image: linear-gradient(92.83deg, rgb(255, 138, 71) 0%, rgb(255, 80, 45) 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
-
-.button-78:after {
-  background-color: initial;
-  background-image: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
-  bottom: 4px;
-  content: "";
-  display: block;
-  left: 4px;
-  overflow: hidden;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: all 100ms ease-out;
-  z-index: -1;
-}
-
-.button-78:hover:not(:disabled):before {
-  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
-}
-
-.button-78:hover:not(:disabled):after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
-  opacity: 0;
-}
-
-.button-78:active:not(:disabled) {
-  color: #ccc;
-}
-
-.button-78:active:not(:disabled):before {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-}
-
-.button-78:active:not(:disabled):after {
-  background-image: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  top: 4px;
-}
-
-.button-78:disabled {
-  cursor: default;
-  opacity: .24;
-}
 
 @media screen and (max-width:1110px) {
    
@@ -349,6 +169,14 @@
   min-height: 26px;
   
 }
+
+.profile-options button{
+  font-size: 20px;
+  padding: 15px 18px;
+  margin:8px;
+  border-radius: 15px;
+  width: 50%;
+ }
 }
 
 @media screen and (max-width:810px) {
@@ -408,6 +236,13 @@
     margin-left: 15px;
   }
   
+  .profile-options button{
+    font-size: 20px;
+    padding: 15px 18px;
+    margin:8px;
+    border-radius: 15px;
+    width: 50%;
+   }
 }
 
 @media screen and (max-width:550px) {
@@ -458,6 +293,14 @@
     
     
 }
+
+.profile-options button{
+  font-size: 15px;
+  padding: 15px 18px;
+  margin:8px;
+  border-radius: 15px;
+  width: 50%;
+ }
 }
 
 @media screen and (max-width:350px) {
@@ -484,19 +327,19 @@
     }
     
     .profile-details{
-      font-size: 10px;
+      font-size: 8px;
       width: 100%;
       padding: 12px;
     }
    
       .profile-details-name .highlighted-text{
-        font-size: 20px;
+        font-size:17px;
       
        
      }
 
      .profile-details-role .primary-text h1{
-      font-size: 40px;
+      font-size: 30px;
       text-align: center;
       
       
@@ -508,4 +351,12 @@
     
     
 }
+
+.profile-options button{
+  font-size: 12px;
+  padding: 15px 22px;
+  margin:8px;
+  border-radius: 13px;
+  width: 50%;
+ }
 }
