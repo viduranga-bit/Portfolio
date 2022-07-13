@@ -82,11 +82,7 @@
     animation: updown 2s linear infinite;
 }
 
-.profile-options .button-87{
-  padding: 15px;
-  border-radius: 40px;
-  width: 25%;
-}
+
   
 @keyframes updown {
     0% {
@@ -112,11 +108,12 @@
 
  }
 
- .profile-options button{
+ .profile-options .button-87{
   font-size: 17px;
   padding: 18px 45px;
   margin: 10px;
-  border-radius: 12px;
+  border-radius: 37px;
+  width: 50%;
     
   
  }
@@ -313,12 +310,10 @@
     
 }
 
-.profile-options button{
+.profile-options .button-87{
   font-size: 15px;
-  padding: 15px 18px;
-  margin:8px;
-  border-radius: 15px;
-  width: 50%;
+  border-radius: 48px;
+  width: 100%;
  }
 }
 
@@ -371,7 +366,7 @@
     
 }
 
-.profile-options button{
+.profile-options .button-87{
   font-size: 12px;
   padding: 15px 22px;
   margin:8px;
