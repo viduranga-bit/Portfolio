@@ -50,7 +50,7 @@ const ProjectCards = () => {
       return(
 
         
-
+        <div className="container">
 <div class="card mb-4" id='new' key ={doc.id} >
   
   <div class="row no-gutters">
@@ -58,18 +58,20 @@ const ProjectCards = () => {
     <div className="col-md-5 " id='image' >
       <img src={doc.project_image_link} class="card-img" alt="..."/>
     </div>
-    <div class="col-md-6  text">
+    <div class="col-md-6 text">
     
         
         <h5 class="card-title  ">{doc.project_name}</h5>
         <h6 class="card-title techniques">{doc.techniques}</h6>
-        <p class="card-text descrip">{doc.project_description}</p>
+        <p class="card-text">{doc.project_description}</p>
         <button type="button" class="btn btn-primary btn-sm button-87">Live Preview</button>
         <button type="button"  class="btn btn-secondary btn-sm button-87">Github Repo</button>
         
       </div>
     </div>
   </div>
+
+ </div>
 
               );
           })}

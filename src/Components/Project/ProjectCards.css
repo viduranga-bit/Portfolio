@@ -210,31 +210,35 @@
    }
 
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:500px) {
 
-  #new{ 
-
-    width: 93%;
-  }
+  
   .button-87{
-   padding: 15px;
-   font-size: 12px;
+   padding: 10px;
+   font-size: 15px;
    border-radius: 15px;
+  
+  
+   
+  }
 
+  .text button{
+
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   .card-img{
     padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
     border-radius: 22px;
+   
     
   }
-  .text button{
-
   
-   
-   
-  }
   .card-text{
     width: 100%;
     margin-bottom: 10px;
@@ -243,6 +247,11 @@
   }
   .text p{
     margin: 0px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
   }
 
   .card-img{
@@ -252,4 +261,15 @@
  
     
   }
+  
+#image{
+  width: 95%;
+  display: flex;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+ 
 }
