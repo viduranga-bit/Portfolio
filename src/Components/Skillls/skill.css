@@ -27,6 +27,26 @@
   color: #ccc9c9;
 
 }
+.item h5{
+  font-size: 30px;
+  margin-top: 20px ;
+  color: aliceblue;
+  font-weight: 600;
+  
+}
+.item h4{
+  font-size: 22px;
+  margin-top: 20px ;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.item h7{
+  font-size: 18px;
+  margin-top: 20px ;
+  color: rgb(245, 142, 73);
+  font-weight: 600;
+  
+}
 .owl-carousel{
   margin-top: 30px;
 }
@@ -72,4 +92,24 @@
   border-width: 13px;
   
   
+}
+
+@media screen and (max-width:500px) {
+
+  .skill-bx{
+    padding: 20px;
+    
+    
+  }
+  .skill-bx h2{
+    margin: 40px 10px 20px 10px;
+    
+    
+  }
+  .skill-bx p{
+   text-align: center;
+   padding-bottom: 30px;
+    
+    
+  }
 }

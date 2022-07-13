@@ -38,7 +38,7 @@ const HeroImage = () => {
           <span className='primary-text'>
           <h1>
           <Typewriter
-               words={['Enthusiastic DEV ♥️ ','Full Stack Developer', 'Flutter Developer📱', 'Freelancer in Fiverr']}
+               words={['Enthusiastic DEV ♥️ ','Full Stack Developer👨', 'Flutter Developer📱', 'Freelancer in Fiverr']}
                loop
                cursor
                cursorStyle='_'

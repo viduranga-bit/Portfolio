@@ -49,7 +49,7 @@ const Skill = () => {
                 <div className="row">
                     <div className="col-12 ">
                         <div className="skill-bx wow zoomIn ">
-                            <h2>Skills</h2>
+                            <h2>SKILLS</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                             
                          
@@ -62,8 +62,8 @@ const Skill = () => {
                                     <img src={meter1} alt="Image" />
                                     <h5>{doc.image}</h5>
                                     <h6>I started learning Computer Science as a part of my degree program and then I start learning Web and Mobile Developing</h6>
-                                    <h5>Web Development</h5>
-                                    <h6>I started learning Computer Science as a part of my degree program and then I start learning Web and Mobile Developing</h6>
+                                    <h4>Techniques</h4>
+                                    <h7>React Js |Angular Js | Vue JS</h7>
                                 </div>
                                
                                );

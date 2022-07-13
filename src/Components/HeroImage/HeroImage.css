@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Open+Sans:wght@400;500&family=Ubuntu:wght@500&display=swap');
  .profile-container{  
   margin-top: 0;
   padding: 60px 0px 120px 0;
@@ -39,7 +39,8 @@
  .profile-details-role h1{
     font-size: 60px;
     font-weight: 700;
-   
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
  }
 
  .primary-text{
@@ -50,16 +51,24 @@
   color: rgb(255, 85, 0);
   font-weight:bold;
   font-size: 25px;
+  font-family:'Open Sans', sans-serif;
+
   
  }
 
  .profile-role-tagline{
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 600;
    
  }
-
+ .profile-role-tagline h5{
+   
+  margin-top:15px;
+  
+  
+ 
+}
  .profile-picture-background{
     
     height: 590px;
@@ -73,7 +82,11 @@
     animation: updown 2s linear infinite;
 }
 
- 
+.profile-options .button-87{
+  padding: 15px;
+  border-radius: 40px;
+  width: 25%;
+}
   
 @keyframes updown {
     0% {
@@ -104,12 +117,14 @@
   padding: 18px 45px;
   margin: 10px;
   border-radius: 12px;
+    
+  
  }
 
 
 
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1025px) {
    
     .profile-details{
         
@@ -130,7 +145,11 @@
     .profile-details-role .primary-text h1{
         font-size: 50px;
     }
-    
+    .profile-options .button-87{
+      padding: 15px;
+      border-radius: 40px;
+      width: 40%;
+    }
 }
 @media screen and (max-width:913px) {
   
@@ -172,10 +191,10 @@
 
 .profile-options button{
   font-size: 20px;
-  padding: 15px 18px;
+  padding: 15px 28px;
   margin:8px;
   border-radius: 15px;
-  width: 50%;
+  width: 70%;
  }
 }
 
@@ -275,13 +294,13 @@
     }
    
       .profile-details-name .highlighted-text{
-        font-size: 20px;
+        font-size: 18px;
       
        
      }
 
      .profile-details-role .primary-text h1{
-      font-size: 35px;
+      font-size: 30px;
       text-align: center;
       
       
@@ -339,7 +358,7 @@
      }
 
      .profile-details-role .primary-text h1{
-      font-size: 30px;
+      font-size: 17px;
       text-align: center;
       
       

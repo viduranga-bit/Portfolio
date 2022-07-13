@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Open+Sans:wght@400;500&family=Ubuntu:wght@500&display=swap');
 .title h1{
     margin-top: 20px;
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color:#e0e0e0
  }
 
  .card-title{
     font-size: 30px;
     text-align: center;
     font-weight: 500;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
  }
 
  .card-title-intro{
@@ -19,7 +22,7 @@
 
 }
 .card-title-intro1{
-   font-size: 15px;
+   font-size: 17px;
    text-align: center;
    color: rgb(203, 220, 234);
 
@@ -77,7 +80,14 @@
 .buttoncenter {
   text-align: center;
 }
-
+.cardname h4{
+  word-spacing: 1px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  padding-bottom: 20px;
+ 
+}
 
  @media screen and (max-width:1110px) {
 
@@ -125,11 +135,17 @@
     text-align: justify;
     padding-left: 20px;
    margin-top: 20px;
+  
 
  }
 
  .cardname h3{
   font-size: 14px;
+ }
+ .cardname h4{
+   word-spacing: 1px;
+   text-align: center;
+  
  }
  }
  

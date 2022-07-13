@@ -85,7 +85,7 @@ const AboutMe = (props) => {
 
         <h2 className="card-title-intro1"> {props.maindata[0]?.degree} </h2>
         <h3 className="card-title-intro1"> {props.maindata[0]?.university} </h3>
-        <p class="card-text">{props.maindata[0]?.Description} </p>
+        <h4 class="card-text">{props.maindata[0]?.Description} </h4>
 
        
         </div>
