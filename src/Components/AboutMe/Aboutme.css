@@ -184,9 +184,12 @@
  }
  .buttoncenter .button-87{
 
-  margin-top: 0;
-  border-radius: 30px;
-  padding: 12px;
+  width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+    border-radius: 30px;
 }
  }
  
