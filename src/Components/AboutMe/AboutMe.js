@@ -91,7 +91,8 @@ const AboutMe = (props) => {
         </div>
        
          <div className='buttoncenter'>
-         <button type="button"  className='button-87'>Download Resume</button>
+          <a href='http://s17.sci.pdn.ac.lk/amithr' rel="noopener noreferrer" target="_blank"
+         type="button"  className='button-87'>University Profile</a>
          </div>
       
     </div>

@@ -90,7 +90,26 @@
 }
 
  @media screen and (max-width:1110px) {
+  .textarea{
+    padding: 20px;
+   
+  
+   }
+   .cardname .card-text{
 
+    width: 95%;
+    text-align: justify;
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+
+ }
+ .buttoncenter button{
+
+    margin-top: 0;
+    border-radius: 40px;
+    padding: 15px;
+ }
  
  }
  @media screen and (max-width:910px) {
@@ -109,7 +128,23 @@
     
   
    }
+   .cardname .card-text{
 
+    width: 95%;
+    text-align: justify;
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 15px;
+
+ }
+ .cardname h3{
+  font-size: 12px;
+ }
+ .cardname h4{
+   word-spacing: 1px;
+   text-align: center;
+  
+ }
    
  }
  @media screen and (max-width:765px) {

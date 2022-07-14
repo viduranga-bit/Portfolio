@@ -52,19 +52,19 @@ const Contact = () => {
                 <form ref={form} action='' onSubmit={sendEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name='firstname' placeholder="First Name" />
+                      <input type="text" name='firstname' placeholder="First Name" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name = 'lastname' placeholder="Last Name" />
+                      <input type="text" name = 'lastname' placeholder="Last Name" required/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" name='email' placeholder="Email Address"  />
+                      <input type="email" name='email' placeholder="Email Address" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" name='phone' placeholder="Phone No." />
+                      <input type="tel" name='phone' placeholder="Phone No." required/>
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="12" name='message' placeholder="Message" ></textarea>
+                      <textarea rows="12" name='message' placeholder="Message" required></textarea>
                       <button  className='button' type="submit"><span>Submit</span></button>
                     </Col>
                     {
