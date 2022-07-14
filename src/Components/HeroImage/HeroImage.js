@@ -63,7 +63,7 @@ const HeroImage = () => {
 
         <div className='profile-options'>
        
-        <a href='#projectcard' onClick={closeMenu}  class="button-87" role="button">rojects</a>
+        <a href='#projectcard' onClick={closeMenu}  class="button-87" role="button">projects</a>
  
         <a href='#connect' onClick={closeMenu} class="button-87">Contact me</a>
         </div>
