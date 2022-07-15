@@ -12,13 +12,13 @@ const Navbar = () => {
 
     const closeMenu = () => setClick(false)
 
-    return (
+    return(
         <div className='header'>
             <nav className='navbar'>
                 <a href='#' className='logo'>
-                    <img src={logo} alt='logo' className='LOGO' />
+                    <img src={logo} alt='logo' className='LOGO' />  
                 </a>
-
+               
                 
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)

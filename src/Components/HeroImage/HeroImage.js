@@ -3,6 +3,7 @@ import {Typewriter} from 'react-simple-typewriter';
 import 'react-simple-typewriter/dist/index'
 import { useState } from 'react';
 import "./HeroImage.css";
+import profileImage from "../../assests/my.png"
 
 
 
@@ -25,6 +26,8 @@ const HeroImage = (props) => {
   
 
   <div className='profile-container'>
+
+    <div className='container cssedit'>
     <div className='profile-parent'>
       <div className='profile-details'>
         <div className = 'colz'>
@@ -53,8 +56,7 @@ const HeroImage = (props) => {
                               />
              </h1>
              <span className='profile-role-tagline'>
-            <h5> {props.maindata[0]?.homeSectionString} <br/> {props.maindata[0]?.homeSectionString2}
-</h5>
+            <h5>  I am looking for more opportunities to work in coding on a freelance basis<br/>Currently i'm a student undergraduate at University Of Peradeniya through BSc. (hons) Computer Science </h5>
              </span>
             </span>
 
@@ -71,10 +73,12 @@ const HeroImage = (props) => {
     
         <div className='profile-picture-background'>
 
-        
+       
         
         </div> 
     
+  </div>
+
   </div>
 </div>
 
