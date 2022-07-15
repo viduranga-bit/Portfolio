@@ -43,7 +43,7 @@ export default function App() {
      <div>
 
      <Navbar/>
-     <HeroImage/>
+     <HeroImage maindata={maindata}/>
      <Skill maindata={maindata} />
      <AboutMe maindata={maindata}/>
      <ProjectCards/>

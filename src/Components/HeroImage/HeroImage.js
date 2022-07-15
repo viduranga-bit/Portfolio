@@ -7,7 +7,7 @@ import "./HeroImage.css";
 
 
 
-const HeroImage = () => {
+const HeroImage = (props) => {
 
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
@@ -53,8 +53,8 @@ const HeroImage = () => {
                               />
              </h1>
              <span className='profile-role-tagline'>
-            <h5> " I love designing & design websites and <br/> I am looking for more opportunities to work in coding on a freelance basis"
-             </h5>
+            <h5> {props.maindata[0]?.homeSectionString} <br/> {props.maindata[0]?.homeSectionString2}
+</h5>
              </span>
             </span>
 
