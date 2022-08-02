@@ -7,9 +7,10 @@ import firebase from "../../firebase";
 import "firebase/firestore";
 
 
-const Skill = () => {
+const Skill = (props) => {
 
     const [skilldata,setskilldata] = useState([])
+    const [skillIcondata,setskillIcondata] = useState([])
   
   useEffect(() => {
     const fetchdata = async () => {
@@ -17,6 +18,9 @@ const Skill = () => {
 
       const skills = await db.collection("skills").get();
       setskilldata(skills.docs.map((doc) => doc.data()));
+
+      const skillicon = await db.collection("skillIcon").get();
+      setskillIcondata(skillicon.docs.map((icondoc) => icondoc.data()));
    
        };
     fetchdata();
@@ -41,6 +45,27 @@ const Skill = () => {
           breakpoint: { max: 464, min: 0 },
           items: 1
         }
+        
+      };
+
+      const responsive2 = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 10
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 10
+        },
+        mobile: {
+          breakpoint: { max: 484, min: 0 },
+          items: 4
+        }
       };
      
       return (
@@ -50,27 +75,42 @@ const Skill = () => {
                     <div className="col-12 ">
                         <div className="skill-bx wow zoomIn ">
                             <h2>SKILLS</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>{props.maindata[1]?.description}<br></br>{props.maindata[1]?.description2}</p>
                             
                          
 
                           
-                            <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={1500} infinite={true} removeArrowOnDeviceType={["tablet", "mobile"]} ssr={true} className="owl-carousel owl-theme skill-slider">
+                            <Carousel responsive={responsive}  autoPlaySpeed={500} infinite={true}  ssr={true} >
                             {skilldata.map((doc ,index) =>{
                               return(
                                 <div className="item"  key={doc.id}>
                                     <img src={meter1} alt="Image" />
-                                    <h5>{doc.image}</h5>
-                                    <h6>I started learning Computer Science as a part of my degree program and then I start learning Web and Mobile Developing</h6>
+                                    <h5>{doc.Description}</h5>
+                                    <h6>{doc.Value}</h6>
                                     <h4>Techniques</h4>
-                                    <h7>React Js |Angular Js | Vue JS</h7>
+                                    <h7>{doc.Techniques}</h7>
                                 </div>
                                
                                );
                             })}
-                            </Carousel>
-              
 
+                            </Carousel>
+                            <div class="container">
+                            <div class="row slider">
+                            <Carousel responsive={responsive2} autoPlay={true} autoPlaySpeed={1000} infinite={true} removeArrowOnDeviceType={["tablet", "mobile","desktop"]} ssr={true}   >      
+                            {skillIcondata.map((icondoc) =>{ 
+                              return(
+                              
+                              <div class="col-sm technologies" >
+                                
+                                    <img src={icondoc.iconlink} alt="Image"/> 
+                             </div>
+                                
+                               );
+                            })}
+                      </Carousel>
+                           </div>
+                           </div> 
                         </div>
                     </div>
                 </div>
